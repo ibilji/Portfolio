@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: #1f1a1a;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-section {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  height: 90vh;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.left, .right {
+  flex: 1;
+  position: relative;
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.right {
+  background-color: #1f1a1a;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+.right .portfolio {
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.right .name {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.right .role {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+.btn {
+  margin-top: 40px;
+  padding: 12px 20px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
