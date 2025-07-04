@@ -6,8 +6,8 @@
 }
 
 body {
-  background-color: #1f1a1a;
-  color: white;
+  background-color: #1f1a1a; /* keep dark to contrast soft elements */
+  color: #f9f9f9;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -21,7 +21,7 @@ body {
   height: 90vh;
   overflow: hidden;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
 }
 
 .left, .right {
@@ -37,7 +37,7 @@ body {
 }
 
 .right {
-  background-color: #1f1a1a;
+  background-color: #1f1a1a; /* deep brown */
   padding: 60px 40px;
   display: flex;
   flex-direction: column;
@@ -48,38 +48,42 @@ body {
   font-size: 3rem;
   line-height: 1.2;
   letter-spacing: 2px;
+  color: #fdf6f0; /* warm cream white */
 }
 
 .right .portfolio {
   font-family: 'Courier New', Courier, monospace;
   font-style: italic;
   font-weight: bold;
+  color: #e3c6d3; /* muted pastel pink */
 }
 
 .right .name {
   margin-top: 30px;
-  font-size: 1.2rem;
-  color: #ccc;
+  font-size: 1.3rem;
+  color: #e0dede; /* soft gray */
 }
 
 .right .role {
   font-size: 1rem;
-  color: #aaa;
+  color: #c9c9c9;
 }
 
 .btn {
   margin-top: 40px;
-  padding: 12px 20px;
-  background-color: transparent;
-  border: 2px solid white;
-  color: white;
+  padding: 12px 24px;
+  background-color: #e3c6d3; /* pastel pink */
+  border: none;
+  color: #1f1a1a; /* dark for contrast */
   text-decoration: none;
   font-weight: bold;
+  border-radius: 6px;
   transition: all 0.3s ease;
   width: fit-content;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .btn:hover {
-  background-color: white;
-  color: black;
+  background-color: #f5e4ec; /* lighter pastel on hover */
+  color: #1f1a1a;
 }
