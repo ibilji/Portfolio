@@ -53,20 +53,22 @@ header {
   color: #ffffff;
 }
 .about-section {
-  background: linear-gradient(to bottom, #2c1e3e, #3c2a4d);
+  background: linear-gradient(to bottom right, #1f1b2e, #3c2a4d);
   padding: 100px 20px;
   display: flex;
   justify-content: center;
 }
 
 .about-card {
-  background-color: rgba(54, 38, 73, 0.9);
+  background: rgba(48, 37, 66, 0.85); /* closer to bg, subtle transparency */
   padding: 30px;
   border-radius: 20px;
   max-width: 1000px;
   width: 100%;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
 }
+
 
 .about-container {
   display: flex;
