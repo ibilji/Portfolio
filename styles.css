@@ -24,7 +24,7 @@ header {
   left: 0;
   height: 100%;
   width: 100%;
-  background: url('portfolio.png') no-repeat center center/cover;
+  background: url('images/portfolio.png') no-repeat center center/cover;
   z-index: 0;
 }
 
