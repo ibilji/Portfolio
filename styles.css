@@ -53,10 +53,11 @@ header {
   color: #ffffff;
 }
 .about-section {
-  background: linear-gradient(to bottom right, #1f1b2e, #3c2a4d);
+  background: url('images/irene-photo.png') no-repeat center center/cover;
   padding: 100px 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .about-card {
