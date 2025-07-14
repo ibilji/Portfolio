@@ -151,4 +151,90 @@ ul li {
 .experience {
   margin-top: 40px;
 }
+.projects-section {
+  padding: 100px 30px;
+  background: linear-gradient(to bottom, #f9f4ef, #fceef5);
+  text-align: center;
+}
+
+.section-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  color: #805d87;
+  margin-bottom: 50px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.project-card {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(128, 93, 135, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(128, 93, 135, 0.3);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #9e71a5;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.tech-tags {
+  margin-bottom: 15px;
+}
+
+.tech-tags span {
+  display: inline-block;
+  background-color: #f3e2f3;
+  color: #805d87;
+  padding: 5px 10px;
+  margin: 3px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+.project-buttons .btn {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-top: 5px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn.view {
+  background-color: #d7b4e5;
+  color: #4e2a5d;
+}
+
+.btn.code {
+  background-color: #f1d5e9;
+  color: #5c3c63;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
 
