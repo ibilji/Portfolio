@@ -53,10 +53,11 @@ header {
   color: #ffffff;
 }
 /* Font (import in <head> of HTML) */
+/* Font (import in <head> of HTML) */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
 
 .about-section {
-  background: linear-gradient(to bottom right, #f9f4ef, #fceef5);
+  background: linear-gradient(to bottom, #f9f4ef 0%, #fceef5 50%, #ebd4f3 100%);
   padding: 120px 30px;
   display: flex;
   justify-content: center;
@@ -64,23 +65,25 @@ header {
 }
 
 .about-card {
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.6);
   padding: 60px;
   border-radius: 28px;
   max-width: 1100px;
   width: 100%;
-  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
-  backdrop-filter: blur(12px);
-  transition: transform 0.3s ease;
+  box-shadow: 0 20px 60px rgba(210, 170, 255, 0.2); /* soft lavender glow */
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(230, 200, 255, 0.25); /* gentle border for contrast */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 25px 70px rgba(200, 160, 240, 0.3);
 }
 
 .about-text {
   font-family: 'Cormorant Garamond', serif;
-  color: #805d87; /* lavender-soft */
+  color: #774d8e; /* deeper lavender for readability */
   font-size: 1.2rem;
   line-height: 1.8;
 }
@@ -88,7 +91,7 @@ header {
 .about-text h2 {
   font-size: 2.8rem;
   margin-bottom: 25px;
-  color: #9e71a5; /* header lavender */
+  color: #925ba8; /* richer header lavender */
   font-weight: 700;
 }
 
@@ -96,6 +99,7 @@ header {
   font-size: 1.1rem;
   line-height: 1.7;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
 
 .profile-section {
