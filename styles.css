@@ -1,7 +1,4 @@
-/* Import font */
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
-
+/* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -11,9 +8,13 @@
 body, html {
   height: 100%;
   width: 100%;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Cormorant Garamond', serif;
   scroll-behavior: smooth;
 }
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 header {
   position: relative;
@@ -51,7 +52,7 @@ header {
   font-size: 1rem;
   font-weight: bold;
   transition: color 0.3s ease;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .navbar a:hover {
@@ -123,7 +124,6 @@ header {
   backdrop-filter: blur(14px);
   border: 1px solid rgba(230, 200, 255, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  font-family: 'Great Vibes', cursive;
   color: #805d87;
 }
 
@@ -139,19 +139,19 @@ header {
 .contact-card {
   font-size: 1.2rem;
   line-height: 1.8;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .about-text h2,
 .contact-card h2,
 .section-heading {
-  font-size: 2.8rem;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
   margin-bottom: 25px;
   color: #925ba8;
-  font-weight: 700;
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: 'Great Vibes', cursive;
 }
 
 .about-text h2::after {
@@ -160,9 +160,10 @@ header {
 }
 
 .about-text p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 1.7;
   margin-bottom: 20px;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .about-text .signature {
@@ -202,6 +203,7 @@ ul li {
   margin-bottom: 12px;
   font-size: 1.1rem;
   line-height: 1.6;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .experience {
@@ -209,9 +211,7 @@ ul li {
 }
 
 .section-heading {
-  font-family: 'Great Vibes', cursive;
-  font-size: 3rem;
-  color: #805d87;
+  font-size: 3.2rem;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -223,7 +223,7 @@ ul li {
 }
 
 .project-card h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #9e71a5;
   margin-bottom: 10px;
   font-family: 'Great Vibes', cursive;
@@ -234,6 +234,7 @@ ul li {
   color: #444;
   margin-bottom: 15px;
   line-height: 1.6;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .tech-tags {
@@ -260,6 +261,7 @@ ul li {
   font-size: 0.9rem;
   font-weight: 600;
   transition: all 0.3s ease;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .btn.view {
@@ -296,6 +298,7 @@ ul li {
   background-color: #f9edf8;
   font-size: 1rem;
   color: #4a2f54;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .contact-form textarea {
@@ -312,8 +315,10 @@ ul li {
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s ease;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .contact-form button:hover {
   background-color: #f3d8ff;
 }
+
