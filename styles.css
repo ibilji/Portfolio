@@ -152,6 +152,8 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
+  text-align: center;
+  justify-content: center;
 }
 
 .about-text h2::after {
@@ -280,6 +282,8 @@ ul li {
 
 .contact-card {
   text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .contact-card p {
@@ -321,4 +325,3 @@ ul li {
 .contact-form button:hover {
   background-color: #f3d8ff;
 }
-
