@@ -1,3 +1,7 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +11,7 @@
 body, html {
   height: 100%;
   width: 100%;
-  font-family: sans-serif;
+  font-family: 'Great Vibes', cursive;
   scroll-behavior: smooth;
 }
 
@@ -47,28 +51,34 @@ header {
   font-size: 1rem;
   font-weight: bold;
   transition: color 0.3s ease;
+  font-family: 'Great Vibes', cursive;
 }
 
 .navbar a:hover {
   color: #ffffff;
 }
-/* Font (import in <head> of HTML) */
-/* Font (import in <head> of HTML) */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
 
-.about-section {
+.about-section,
+.profile-section,
+.projects-section,
+.contact-section {
   position: relative;
   background: linear-gradient(to bottom, #f9f4ef 0%, #fceef5 50%, #ebd4f3 100%);
-  padding: 120px 30px;
+  padding: 100px 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 
-/* Gradient dreamy blobs */
 .about-section::before,
-.about-section::after {
+.about-section::after,
+.profile-section::before,
+.profile-section::after,
+.projects-section::before,
+.projects-section::after,
+.contact-section::before,
+.contact-section::after {
   content: '';
   position: absolute;
   border-radius: 50%;
@@ -76,7 +86,10 @@ header {
   z-index: 0;
 }
 
-.about-section::before {
+.about-section::before,
+.profile-section::before,
+.projects-section::before,
+.contact-section::before {
   width: 300px;
   height: 300px;
   top: 5%;
@@ -84,7 +97,10 @@ header {
   background: radial-gradient(circle, #fdd8eb, transparent 70%);
 }
 
-.about-section::after {
+.about-section::after,
+.profile-section::after,
+.projects-section::after,
+.contact-section::after {
   width: 400px;
   height: 400px;
   bottom: -10%;
@@ -92,7 +108,10 @@ header {
   background: radial-gradient(circle, #e8d3f8, transparent 70%);
 }
 
-.about-card {
+.about-card,
+.profile-card,
+.project-card,
+.contact-card {
   position: relative;
   background: rgba(255, 255, 255, 0.6);
   padding: 60px;
@@ -104,21 +123,27 @@ header {
   backdrop-filter: blur(14px);
   border: 1px solid rgba(230, 200, 255, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Great Vibes', cursive;
+  color: #805d87;
 }
 
-.about-card:hover {
+.about-card:hover,
+.project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 25px 70px rgba(200, 160, 240, 0.3);
 }
 
-.about-text {
-  font-family: 'Cormorant Garamond', serif;
-  color: #774d8e;
+.about-text,
+.profile-card,
+.project-card,
+.contact-card {
   font-size: 1.2rem;
   line-height: 1.8;
 }
 
-.about-text h2 {
+.about-text h2,
+.contact-card h2,
+.section-heading {
   font-size: 2.8rem;
   margin-bottom: 25px;
   color: #925ba8;
@@ -126,6 +151,7 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
+  font-family: 'Great Vibes', cursive;
 }
 
 .about-text h2::after {
@@ -139,36 +165,12 @@ header {
   margin-bottom: 20px;
 }
 
-/* Cute signature line */
 .about-text .signature {
   font-style: italic;
   margin-top: 40px;
   font-size: 1.1rem;
   color: #8a4e9b;
   display: inline-block;
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
-
-.profile-section {
-  background: linear-gradient(to bottom right, #f9f4ef, #fceef5);
-  padding: 120px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.profile-card {
-  background: rgba(255, 255, 255, 0.65);
-  padding: 60px;
-  border-radius: 28px;
-  max-width: 1200px;
-  width: 100%;
-  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  font-family: 'Cormorant Garamond', serif;
-  color: #805d87;
 }
 
 .skills-education {
@@ -188,6 +190,7 @@ h3 {
   color: #9e71a5;
   margin-bottom: 20px;
   font-weight: 700;
+  font-family: 'Great Vibes', cursive;
 }
 
 ul {
@@ -204,17 +207,13 @@ ul li {
 .experience {
   margin-top: 40px;
 }
-.projects-section {
-  padding: 100px 30px;
-  background: linear-gradient(to bottom, #f9f4ef, #fceef5);
-  text-align: center;
-}
 
 .section-heading {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Great Vibes', cursive;
   font-size: 3rem;
   color: #805d87;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .projects-grid {
@@ -223,24 +222,11 @@ ul li {
   gap: 40px;
 }
 
-.project-card {
-  background: white;
-  padding: 30px 25px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(128, 93, 135, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: left;
-}
-
-.project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 16px 40px rgba(128, 93, 135, 0.3);
-}
-
 .project-card h3 {
   font-size: 1.5rem;
   color: #9e71a5;
   margin-bottom: 10px;
+  font-family: 'Great Vibes', cursive;
 }
 
 .project-card p {
@@ -289,30 +275,9 @@ ul li {
 .btn:hover {
   transform: scale(1.05);
 }
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
-
-.contact-section {
-  padding: 100px 20px;
-  background-color: #fef6f9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .contact-card {
-  background-color: #fff0f8;
-  padding: 50px;
-  border-radius: 20px;
-  max-width: 600px;
-  width: 100%;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
   text-align: center;
-}
-
-.contact-card h2 {
-  font-size: 2.2rem;
-  color: #b072bd;
-  margin-bottom: 10px;
 }
 
 .contact-card p {
