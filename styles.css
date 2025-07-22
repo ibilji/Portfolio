@@ -57,7 +57,7 @@ header {
 
 .about-section {
   position: relative;
-  background: linear-gradient(to bottom, #1d0c27 0%, #261135 100%);
+  background: url('images/irene-photo.png') no-repeat center center/cover;
   padding: 120px 30px;
   display: flex;
   justify-content: center;
