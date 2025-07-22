@@ -53,103 +53,73 @@ header {
   color: #ffffff;
 }
 
-.about-section {
-  position: relative;
-  min-height: 100vh;
-  background: linear-gradient(to bottom, #fef6f9 0%, #f9f4ef 50%, #f3effd 100%);
-  padding: 100px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
+ .about-section {
+      position: relative;
+      min-height: 100vh;
+      background: linear-gradient(to bottom, #fef4f8 0%, #f9f4ef 50%, #f3effd 100%);
+      padding: 120px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
 
-/* Soft pastel blob decorations */
-.about-section::before,
-.about-section::after {
-  content: '';
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(100px);
-  opacity: 0.6;
-  z-index: 0;
-}
+    .about-section::before,
+    .about-section::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(100px);
+      z-index: 0;
+      opacity: 0.8;
+    }
 
-.about-section::before {
-  width: 350px;
-  height: 350px;
-  top: -10%;
-  left: -15%;
-  background: radial-gradient(circle, #ffdbef, transparent 70%);
-}
+    .about-section::before {
+      width: 500px;
+      height: 500px;
+      top: -20%;
+      left: -15%;
+      background: radial-gradient(circle at center, #ffdbef, transparent 70%);
+    }
 
-.about-section::after {
-  width: 400px;
-  height: 400px;
-  bottom: -10%;
-  right: -10%;
-  background: radial-gradient(circle, #e5d8fd, transparent 70%);
-}
+    .about-section::after {
+      width: 600px;
+      height: 600px;
+      bottom: -20%;
+      right: -15%;
+      background: radial-gradient(circle at center, #d9d3ff, transparent 70%);
+    }
 
-/* Frame-style content card */
-.about-card {
-  background: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 25px 60px rgba(180, 150, 255, 0.2);
-  border: 1px solid rgba(230, 200, 255, 0.3);
-  color: #4d2f4f;
-  position: relative;
-  padding: 60px 40px;
-  border-radius: 32px;
-  max-width: 1000px;
-  width: 100%;
-  z-index: 1;
-  backdrop-filter: blur(16px);
-  transition: all 0.3s ease-in-out;
-}
+    .about-card {
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(200, 170, 255, 0.3);
+      box-shadow: 0 30px 80px rgba(170, 140, 255, 0.2);
+      padding: 70px 60px;
+      border-radius: 32px;
+      max-width: 1000px;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      transition: 0.4s ease;
+    }
 
-.about-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 35px 100px rgba(150, 120, 255, 0.25);
-}
+    .about-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 40px 100px rgba(150, 120, 255, 0.3);
+    }
 
-/* Text inside the frame */
-.about-text {
-  font-family: 'Cormorant Garamond', serif;
-  color: #5a3c5e;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  z-index: 2;
-  position: relative;
-}
+    .about-card h1 {
+      font-size: 2.5rem;
+      color: #4b0082;
+      margin-bottom: 20px;
+    }
 
-.about-text h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #874f8a;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.about-text h2::after {
-  content: "✨";
-  font-size: 1.8rem;
-}
-
-.about-text p {
-  font-size: 1.1rem;
-  margin-bottom: 18px;
-}
-
-.about-text .signature {
-  font-style: italic;
-  margin-top: 35px;
-  font-size: 1rem;
-  color: #905ea8;
-  display: inline-block;
-}
-
+    .about-card p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #333;
+    }
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
 
