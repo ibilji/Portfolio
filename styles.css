@@ -53,12 +53,11 @@ header {
   color: #ffffff;
 }
 /* Font (import in <head> of HTML) */
-/* Font (import in <head> of HTML) */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
 
 .about-section {
   position: relative;
-  background: linear-gradient(to bottom, #f9f4ef 0%, #fceef5 50%, #ebd4f3 100%);
+  background: linear-gradient(to bottom, #1b0b2e 0%, #2b113d 50%, #3a1b52 100%);
   padding: 120px 30px;
   display: flex;
   justify-content: center;
@@ -66,66 +65,68 @@ header {
   overflow: hidden;
 }
 
-/* Gradient dreamy blobs */
+/* Dreamy glowing blobs matching purple aesthetic */
 .about-section::before,
 .about-section::after {
   content: '';
   position: absolute;
   border-radius: 50%;
-  filter: blur(80px);
+  filter: blur(100px);
   z-index: 0;
+  opacity: 0.4;
 }
 
 .about-section::before {
-  width: 300px;
-  height: 300px;
-  top: 5%;
+  width: 320px;
+  height: 320px;
+  top: 0%;
   left: -10%;
-  background: radial-gradient(circle, #fdd8eb, transparent 70%);
+  background: radial-gradient(circle, #ae72e6, transparent 70%);
 }
 
 .about-section::after {
   width: 400px;
   height: 400px;
-  bottom: -10%;
+  bottom: -15%;
   right: -15%;
-  background: radial-gradient(circle, #e8d3f8, transparent 70%);
+  background: radial-gradient(circle, #f4a9dd, transparent 70%);
 }
 
 .about-card {
   position: relative;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.05);
   padding: 60px;
   border-radius: 28px;
-  max-width: 1100px;
+  max-width: 1000px;
   width: 100%;
   z-index: 1;
-  box-shadow: 0 20px 60px rgba(210, 170, 255, 0.2);
-  backdrop-filter: blur(14px);
-  border: 1px solid rgba(230, 200, 255, 0.25);
+  box-shadow: 0 20px 60px rgba(200, 160, 240, 0.25);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 25px 70px rgba(200, 160, 240, 0.3);
+  transform: translateY(-8px);
+  box-shadow: 0 30px 80px rgba(230, 190, 255, 0.3);
 }
 
 .about-text {
   font-family: 'Cormorant Garamond', serif;
-  color: #774d8e;
-  font-size: 1.2rem;
+  color: #f2e5ff;
+  font-size: 1.25rem;
   line-height: 1.8;
 }
 
 .about-text h2 {
   font-size: 2.8rem;
   margin-bottom: 25px;
-  color: #925ba8;
+  color: #f1caff;
   font-weight: 700;
   display: flex;
   align-items: center;
   gap: 10px;
+  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
 }
 
 .about-text h2::after {
@@ -134,9 +135,10 @@ header {
 }
 
 .about-text p {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   line-height: 1.7;
   margin-bottom: 20px;
+  color: #e4c9f9;
 }
 
 /* Cute signature line */
@@ -144,7 +146,7 @@ header {
   font-style: italic;
   margin-top: 40px;
   font-size: 1.1rem;
-  color: #8a4e9b;
+  color: #db99ff;
   display: inline-block;
 }
 
