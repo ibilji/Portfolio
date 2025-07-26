@@ -53,7 +53,7 @@ header {
   color: #ffffff;
 }
 
- .about-section {
+.about-section {
   position: relative;
   background: linear-gradient(to bottom, #f9f4ef 0%, #fceee9 50%, #f9e8f3 100%);
   padding: 120px 30px;
@@ -88,8 +88,9 @@ header {
   background: radial-gradient(circle, #f6dbe6, transparent 70%);
 }
 
+/* 🔄 Modified card to use soft pastel color */
 .about-card {
-  background: rgba(255, 255, 255, 0.72);
+  background: linear-gradient(to bottom right, #f9e6f9, #f3d8f0);
   box-shadow: 0 25px 70px rgba(170, 120, 220, 0.18);
   border: 1px solid rgba(230, 200, 255, 0.25);
   color: #5c3a5e;
@@ -99,12 +100,11 @@ header {
   max-width: 1100px;
   width: 100%;
   z-index: 1;
-  backdrop-filter: blur(16px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   gap: 40px;
   align-items: center;
   justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about-card:hover {
@@ -149,6 +149,7 @@ header {
   display: inline-block;
 }
 
+/* 🖼️ Image section (included as requested) */
 .about-image {
   flex-shrink: 0;
   width: 220px;
@@ -165,6 +166,7 @@ header {
   object-fit: cover;
   display: block;
 }
+
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
 
