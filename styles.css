@@ -60,6 +60,10 @@ body, html {
   font-family: 'Cormorant Garamond', serif;
 }
 
+/* -------------------- GLOBAL FONTS -------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
+
+/* -------------------- ABOUT SECTION -------------------- */
 .about-section {
   position: relative;
   height: 100vh;
@@ -99,7 +103,6 @@ body, html {
   background: radial-gradient(circle, #c183d8, transparent 70%);
 }
 
-/* 🎨 COOL BLUISH GLASS CARD */
 .about-card {
   background: linear-gradient(135deg, rgba(165, 215, 255, 0.09), rgba(120, 180, 255, 0.15));
   backdrop-filter: blur(20px);
@@ -110,7 +113,7 @@ body, html {
   max-width: 1100px;
   width: 90%;
   z-index: 2;
-  color: #f4f4f4;
+  color: #f0f6ff;
   box-shadow:
     0 25px 70px rgba(100, 170, 255, 0.2),
     0 0 20px rgba(120, 180, 255, 0.15);
@@ -130,13 +133,13 @@ body, html {
 
 .about-text {
   flex: 1;
-  color: #f0f6ff; /* bluish white for better readability on blue glass */
+  color: #f0f6ff;
 }
 
 .about-text h2 {
   font-size: 2.8rem;
   margin-bottom: 25px;
-  color: #b8d4ff; /* soft blue-purple for headings */
+  color: #a0c8ff;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -169,12 +172,9 @@ body, html {
   display: block;
 }
 
-
-
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
-
+/* -------------------- PROFILE SECTION -------------------- */
 .profile-section {
-  background: linear-gradient(to bottom right, #f9f4ef, #fceef5);
+  background: linear-gradient(to bottom right, #f4fbff, #e9f2ff);
   padding: 120px 20px;
   display: flex;
   justify-content: center;
@@ -182,15 +182,15 @@ body, html {
 }
 
 .profile-card {
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.7);
   padding: 60px;
   border-radius: 28px;
   max-width: 1200px;
   width: 100%;
-  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
   backdrop-filter: blur(10px);
   font-family: 'Cormorant Garamond', serif;
-  color: #805d87;
+  color: #5c6c80;
 }
 
 .skills-education {
@@ -207,7 +207,7 @@ body, html {
 
 h3 {
   font-size: 2rem;
-  color: #9e71a5;
+  color: #6a84a0;
   margin-bottom: 20px;
   font-weight: 700;
 }
@@ -226,16 +226,18 @@ ul li {
 .experience {
   margin-top: 40px;
 }
+
+/* -------------------- PROJECTS SECTION -------------------- */
 .projects-section {
   padding: 100px 30px;
-  background: linear-gradient(to bottom, #f9f4ef, #fceef5);
+  background: linear-gradient(to bottom, #eef5ff, #f7faff);
   text-align: center;
 }
 
 .section-heading {
   font-family: 'Cormorant Garamond', serif;
   font-size: 3rem;
-  color: #805d87;
+  color: #5a6e88;
   margin-bottom: 50px;
 }
 
@@ -249,19 +251,19 @@ ul li {
   background: white;
   padding: 30px 25px;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(128, 93, 135, 0.2);
+  box-shadow: 0 10px 30px rgba(130, 160, 200, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: left;
 }
 
 .project-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 16px 40px rgba(128, 93, 135, 0.3);
+  box-shadow: 0 16px 40px rgba(130, 160, 200, 0.3);
 }
 
 .project-card h3 {
   font-size: 1.5rem;
-  color: #9e71a5;
+  color: #6a84a0;
   margin-bottom: 10px;
 }
 
@@ -278,8 +280,8 @@ ul li {
 
 .tech-tags span {
   display: inline-block;
-  background-color: #f3e2f3;
-  color: #805d87;
+  background-color: #e0edff;
+  color: #4e6e91;
   padding: 5px 10px;
   margin: 3px;
   border-radius: 12px;
@@ -299,30 +301,30 @@ ul li {
 }
 
 .btn.view {
-  background-color: #d7b4e5;
-  color: #4e2a5d;
+  background-color: #c9e4ff;
+  color: #2b4a6f;
 }
 
 .btn.code {
-  background-color: #f1d5e9;
-  color: #5c3c63;
+  background-color: #e3f1ff;
+  color: #355a80;
 }
 
 .btn:hover {
   transform: scale(1.05);
 }
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
 
+/* -------------------- CONTACT SECTION -------------------- */
 .contact-section {
   padding: 100px 20px;
-  background-color: #fef6f9;
+  background-color: #f4faff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .contact-card {
-  background-color: #fff0f8;
+  background-color: #e6f2ff;
   padding: 50px;
   border-radius: 20px;
   max-width: 600px;
@@ -333,12 +335,12 @@ ul li {
 
 .contact-card h2 {
   font-size: 2.2rem;
-  color: #b072bd;
+  color: #4a6a88;
   margin-bottom: 10px;
 }
 
 .contact-card p {
-  color: #5a445d;
+  color: #3b5066;
   font-size: 1rem;
   margin-bottom: 30px;
 }
@@ -350,9 +352,9 @@ ul li {
   margin-bottom: 15px;
   border-radius: 10px;
   border: none;
-  background-color: #f9edf8;
+  background-color: #f0f7ff;
   font-size: 1rem;
-  color: #4a2f54;
+  color: #2f4a61;
 }
 
 .contact-form textarea {
@@ -362,8 +364,8 @@ ul li {
 
 .contact-form button {
   padding: 12px 30px;
-  background-color: #e6c5f1;
-  color: #4c2e61;
+  background-color: #cfe4ff;
+  color: #264a6a;
   border: none;
   font-weight: bold;
   border-radius: 8px;
@@ -372,5 +374,6 @@ ul li {
 }
 
 .contact-form button:hover {
-  background-color: #f3d8ff;
+  background-color: #d9efff;
 }
+
