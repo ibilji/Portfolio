@@ -1,4 +1,5 @@
- * {
+/* ----------- GLOBAL RESET ----------- */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,10 +8,16 @@
 body, html {
   height: 100%;
   width: 100%;
-  font-family: sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
+/* ----------- FONTS ----------- */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
+
+/* ----------- HEADER ----------- */
 header {
   position: relative;
   height: 100vh;
@@ -53,26 +60,17 @@ header {
   color: #ffffff;
 }
 
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: 'Cormorant Garamond', serif;
-}
-
-/* -------------------- GLOBAL FONTS -------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
-/* About Section - Elegant Purple Glow */
+/* ----------- ABOUT SECTION ----------- */
 .about-section {
   position: relative;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(to bottom right, #f3e9e2, #fef8f3);
+  background: linear-gradient(to bottom right, #f9e5ff, #e0c1e9);
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  border-top: 6px solid rgba(111, 72, 149, 0.25);
+  border-top: 6px solid rgba(146, 108, 158, 0.25);
 }
 
 .about-section::before {
@@ -82,7 +80,7 @@ body, html {
   height: 400px;
   top: 0%;
   left: 0%;
-  background: radial-gradient(circle, #e5d1f2, transparent 70%);
+  background: radial-gradient(circle, #e0c1e9, transparent 70%);
   filter: blur(100px);
   opacity: 0.5;
   z-index: 1;
@@ -95,7 +93,7 @@ body, html {
   height: 500px;
   bottom: 0%;
   right: 0%;
-  background: radial-gradient(circle, #e9ccf5, transparent 70%);
+  background: radial-gradient(circle, #f9e5ff, transparent 70%);
   filter: blur(100px);
   opacity: 0.4;
   z-index: 1;
@@ -105,15 +103,15 @@ body, html {
   position: relative;
   z-index: 2;
   max-width: 980px;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.65);
   backdrop-filter: blur(25px);
-  border: 2px solid rgba(111, 72, 149, 0.2);
+  border: 2px solid rgba(146, 108, 158, 0.2);
   border-radius: 30px;
   padding: 50px;
   display: flex;
   flex-direction: row;
-  box-shadow: 0 8px 24px rgba(111, 72, 149, 0.25);
-  color: #3d2b3d;
+  box-shadow: 0 8px 24px rgba(93, 58, 103, 0.25);
+  color: #5d3a67;
   font-family: 'Cormorant Garamond', serif;
 }
 
@@ -128,10 +126,10 @@ body, html {
 
 .about-text h2 {
   font-size: 3rem;
-  color: #6f4895;
+  color: #b283a9;
   margin-bottom: 20px;
   font-weight: 700;
-  border-bottom: 3px solid #caa6df;
+  border-bottom: 3px solid #926c9e;
   display: inline-block;
   padding-bottom: 4px;
 }
@@ -139,7 +137,7 @@ body, html {
 .about-text p {
   font-size: 1.25rem;
   line-height: 1.9;
-  color: #3d2b3d;
+  color: #5d3a67;
 }
 
 @media (max-width: 768px) {
@@ -160,10 +158,9 @@ body, html {
   }
 }
 
-
-/* -------------------- PROFILE SECTION -------------------- */
+/* ----------- PROFILE SECTION ----------- */
 .profile-section {
-  background: #DDE7DA; /* soft sage green */
+  background: #f9e5ff;
   padding: 120px 20px;
   display: flex;
   justify-content: center;
@@ -171,14 +168,14 @@ body, html {
 }
 
 .profile-card {
-  background: #FFFFFF;
+  background: #ffffff;
   padding: 60px;
   border-radius: 28px;
   max-width: 1200px;
   width: 100%;
-  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 15px 45px rgba(93, 58, 103, 0.08);
   font-family: 'Cormorant Garamond', serif;
-  color: #2D2D2D;
+  color: #5d3a67;
 }
 
 .skills-education {
@@ -195,7 +192,7 @@ body, html {
 
 h3 {
   font-size: 2rem;
-  color: #B76D7B; /* muted clay pink */
+  color: #b283a9;
   margin-bottom: 20px;
   font-weight: 700;
 }
@@ -215,17 +212,17 @@ ul li {
   margin-top: 40px;
 }
 
-/* -------------------- PROJECTS SECTION -------------------- */
+/* ----------- PROJECTS SECTION ----------- */
 .projects-section {
   padding: 100px 30px;
-  background: #F1E8DC; /* warm beige */
+  background: #e0c1e9;
   text-align: center;
 }
 
 .section-heading {
   font-family: 'Cormorant Garamond', serif;
   font-size: 3rem;
-  color: #2D2D2D;
+  color: #5d3a67;
   margin-bottom: 50px;
 }
 
@@ -236,28 +233,28 @@ ul li {
 }
 
 .project-card {
-  background: white;
+  background: #f9e5ff;
   padding: 30px 25px;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(130, 160, 200, 0.2);
+  box-shadow: 0 10px 30px rgba(146, 108, 158, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: left;
 }
 
 .project-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 16px 40px rgba(130, 160, 200, 0.3);
+  box-shadow: 0 16px 40px rgba(146, 108, 158, 0.3);
 }
 
 .project-card h3 {
   font-size: 1.5rem;
-  color: #2D2D2D;
+  color: #5d3a67;
   margin-bottom: 10px;
 }
 
 .project-card p {
   font-size: 1rem;
-  color: #444;
+  color: #5d3a67;
   margin-bottom: 15px;
   line-height: 1.6;
 }
@@ -268,8 +265,8 @@ ul li {
 
 .tech-tags span {
   display: inline-block;
-  background-color: #EAE6E5; /* soft light for tags */
-  color: #2D2D2D;
+  background-color: #e0c1e9;
+  color: #5d3a67;
   padding: 5px 10px;
   margin: 3px;
   border-radius: 12px;
@@ -289,12 +286,12 @@ ul li {
 }
 
 .btn.view {
-  background-color: #D88C9A;
+  background-color: #926c9e;
   color: #fff;
 }
 
 .btn.code {
-  background-color: #E8A0BF;
+  background-color: #b283a9;
   color: #fff;
 }
 
@@ -302,33 +299,33 @@ ul li {
   transform: scale(1.05);
 }
 
-/* -------------------- CONTACT SECTION -------------------- */
+/* ----------- CONTACT SECTION ----------- */
 .contact-section {
   padding: 100px 20px;
-  background-color: #DDE7DA; /* soft sage green */
+  background-color: #f9e5ff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .contact-card {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 50px;
   border-radius: 20px;
   max-width: 600px;
   width: 100%;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 12px 35px rgba(93, 58, 103, 0.08);
   text-align: center;
 }
 
 .contact-card h2 {
   font-size: 2.2rem;
-  color: #B76D7B;
+  color: #b283a9;
   margin-bottom: 10px;
 }
 
 .contact-card p {
-  color: #2D2D2D;
+  color: #5d3a67;
   font-size: 1rem;
   margin-bottom: 30px;
 }
@@ -340,9 +337,9 @@ ul li {
   margin-bottom: 15px;
   border-radius: 10px;
   border: none;
-  background-color: #F4EEF6;
+  background-color: #e0c1e9;
   font-size: 1rem;
-  color: #2D2D2D;
+  color: #5d3a67;
 }
 
 .contact-form textarea {
@@ -352,7 +349,7 @@ ul li {
 
 .contact-form button {
   padding: 12px 30px;
-  background-color: #D88C9A;
+  background-color: #926c9e;
   color: #fff;
   border: none;
   font-weight: bold;
@@ -362,6 +359,7 @@ ul li {
 }
 
 .contact-form button:hover {
-  background-color: #B76D7B;
+  background-color: #5d3a67;
 }
+
 
