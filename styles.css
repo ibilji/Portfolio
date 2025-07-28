@@ -104,19 +104,19 @@ body, html {
 }
 
 .about-card {
-  background: linear-gradient(135deg, rgba(165, 215, 255, 0.09), rgba(120, 180, 255, 0.15));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.15));
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 3px solid rgba(200, 225, 255, 0.2);
+  border: 3px solid rgba(255, 255, 255, 0.15);
   border-radius: 30px;
   padding: 60px;
   max-width: 1100px;
   width: 90%;
   z-index: 2;
-  color: #f0f6ff;
+  color: #f3e6f5;
   box-shadow:
-    0 25px 70px rgba(100, 170, 255, 0.2),
-    0 0 20px rgba(120, 180, 255, 0.15);
+    0 25px 70px rgba(130, 80, 200, 0.2),
+    0 0 20px rgba(150, 100, 220, 0.15);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -127,19 +127,19 @@ body, html {
 .about-card:hover {
   transform: translateY(-5px);
   box-shadow:
-    0 35px 90px rgba(100, 170, 255, 0.35),
-    0 0 25px rgba(120, 180, 255, 0.2);
+    0 35px 90px rgba(130, 80, 200, 0.35),
+    0 0 25px rgba(150, 100, 220, 0.2);
 }
 
 .about-text {
   flex: 1;
-  color: #f0f6ff;
+  color: #f3e6f5;
 }
 
 .about-text h2 {
   font-size: 2.8rem;
   margin-bottom: 25px;
-  color: #a0c8ff;
+  color: #dab6f3;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -174,7 +174,7 @@ body, html {
 
 /* -------------------- PROFILE SECTION -------------------- */
 .profile-section {
-  background: linear-gradient(to bottom right, #f4fbff, #e9f2ff);
+  background: #DDE7DA; /* soft sage green */
   padding: 120px 20px;
   display: flex;
   justify-content: center;
@@ -182,15 +182,14 @@ body, html {
 }
 
 .profile-card {
-  background: rgba(255, 255, 255, 0.7);
+  background: #FFFFFF;
   padding: 60px;
   border-radius: 28px;
   max-width: 1200px;
   width: 100%;
   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
-  backdrop-filter: blur(10px);
   font-family: 'Cormorant Garamond', serif;
-  color: #5c6c80;
+  color: #2D2D2D;
 }
 
 .skills-education {
@@ -207,7 +206,7 @@ body, html {
 
 h3 {
   font-size: 2rem;
-  color: #6a84a0;
+  color: #B76D7B; /* muted clay pink */
   margin-bottom: 20px;
   font-weight: 700;
 }
@@ -230,14 +229,14 @@ ul li {
 /* -------------------- PROJECTS SECTION -------------------- */
 .projects-section {
   padding: 100px 30px;
-  background: linear-gradient(to bottom, #eef5ff, #f7faff);
+  background: #F1E8DC; /* warm beige */
   text-align: center;
 }
 
 .section-heading {
   font-family: 'Cormorant Garamond', serif;
   font-size: 3rem;
-  color: #5a6e88;
+  color: #2D2D2D;
   margin-bottom: 50px;
 }
 
@@ -263,7 +262,7 @@ ul li {
 
 .project-card h3 {
   font-size: 1.5rem;
-  color: #6a84a0;
+  color: #2D2D2D;
   margin-bottom: 10px;
 }
 
@@ -280,8 +279,8 @@ ul li {
 
 .tech-tags span {
   display: inline-block;
-  background-color: #e0edff;
-  color: #4e6e91;
+  background-color: #EAE6E5; /* soft light for tags */
+  color: #2D2D2D;
   padding: 5px 10px;
   margin: 3px;
   border-radius: 12px;
@@ -301,13 +300,13 @@ ul li {
 }
 
 .btn.view {
-  background-color: #c9e4ff;
-  color: #2b4a6f;
+  background-color: #D88C9A;
+  color: #fff;
 }
 
 .btn.code {
-  background-color: #e3f1ff;
-  color: #355a80;
+  background-color: #E8A0BF;
+  color: #fff;
 }
 
 .btn:hover {
@@ -317,14 +316,14 @@ ul li {
 /* -------------------- CONTACT SECTION -------------------- */
 .contact-section {
   padding: 100px 20px;
-  background-color: #f4faff;
+  background-color: #DDE7DA; /* soft sage green */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .contact-card {
-  background-color: #e6f2ff;
+  background-color: #FFFFFF;
   padding: 50px;
   border-radius: 20px;
   max-width: 600px;
@@ -335,12 +334,12 @@ ul li {
 
 .contact-card h2 {
   font-size: 2.2rem;
-  color: #4a6a88;
+  color: #B76D7B;
   margin-bottom: 10px;
 }
 
 .contact-card p {
-  color: #3b5066;
+  color: #2D2D2D;
   font-size: 1rem;
   margin-bottom: 30px;
 }
@@ -352,9 +351,9 @@ ul li {
   margin-bottom: 15px;
   border-radius: 10px;
   border: none;
-  background-color: #f0f7ff;
+  background-color: #F4EEF6;
   font-size: 1rem;
-  color: #2f4a61;
+  color: #2D2D2D;
 }
 
 .contact-form textarea {
@@ -364,8 +363,8 @@ ul li {
 
 .contact-form button {
   padding: 12px 30px;
-  background-color: #cfe4ff;
-  color: #264a6a;
+  background-color: #D88C9A;
+  color: #fff;
   border: none;
   font-weight: bold;
   border-radius: 8px;
@@ -374,6 +373,6 @@ ul li {
 }
 
 .contact-form button:hover {
-  background-color: #d9efff;
+  background-color: #B76D7B;
 }
 
