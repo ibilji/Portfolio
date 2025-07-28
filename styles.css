@@ -69,7 +69,7 @@ body, html {
   height: 100vh;
   width: 100%;
   background: url('images/irene-photo.png') no-repeat center center / cover,
-              linear-gradient(to bottom right, #2e003e, #3d0057);
+              linear-gradient(to bottom right, #2e003e, #72617d);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,7 +92,7 @@ body, html {
   height: 320px;
   top: 8%;
   left: -8%;
-  background: radial-gradient(circle, #d9a1ff, transparent 70%);
+  background: radial-gradient(circle, #e1c9f3, transparent 70%);
 }
 
 .about-section::after {
@@ -100,7 +100,7 @@ body, html {
   height: 420px;
   bottom: -12%;
   right: -10%;
-  background: radial-gradient(circle, #c183d8, transparent 70%);
+  background: radial-gradient(circle, #c7abc8, transparent 70%);
 }
 
 .about-card {
