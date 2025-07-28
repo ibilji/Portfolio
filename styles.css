@@ -99,21 +99,27 @@ body, html {
 }
 
 .about-card {
-  background: linear-gradient(135deg, rgba(250, 240, 255, 0.08), rgba(200, 180, 255, 0.12)); /* 🌈 Differentiated card color */
+  background: linear-gradient(135deg, rgba(220, 235, 255, 0.08), rgba(190, 220, 255, 0.14)); /* 🔵 Blue-ish tone */
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 3px solid rgba(255, 255, 255, 0.15);
+  border: 3px solid rgba(255, 255, 255, 0.15);  /* Soft white border */
   border-radius: 30px;
   padding: 60px;
   max-width: 1100px;
   width: 90%;
   z-index: 2;
-  color: #fff;
-  box-shadow: 0 25px 70px rgba(170, 120, 220, 0.2);
+  color: #f4f4f4;
+  box-shadow: 0 25px 70px rgba(150, 200, 255, 0.15); /* Cooler glow */
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 35px 90px rgba(150, 200, 255, 0.3); /* Enhance glow on hover */
 }
 
 .about-text {
