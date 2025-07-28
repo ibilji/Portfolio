@@ -64,7 +64,8 @@ body, html {
   position: relative;
   height: 100vh;
   width: 100%;
-  background: url('images/irene-photo.png') no-repeat center center / cover, linear-gradient(to bottom right, #2e003e, #3d0057);
+  background: url('images/irene-photo.png') no-repeat center center / cover,
+              linear-gradient(to bottom right, #2e003e, #3d0057);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,18 +99,21 @@ body, html {
   background: radial-gradient(circle, #c183d8, transparent 70%);
 }
 
+/* 🎨 COOL BLUISH GLASS CARD */
 .about-card {
-  background: linear-gradient(135deg, rgba(220, 235, 255, 0.08), rgba(190, 220, 255, 0.14)); /* 🔵 Blue-ish tone */
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 3px solid rgba(255, 255, 255, 0.15);  /* Soft white border */
+  background: linear-gradient(135deg, rgba(165, 215, 255, 0.09), rgba(120, 180, 255, 0.15));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 3px solid rgba(200, 225, 255, 0.2);
   border-radius: 30px;
   padding: 60px;
   max-width: 1100px;
   width: 90%;
   z-index: 2;
   color: #f4f4f4;
-  box-shadow: 0 25px 70px rgba(150, 200, 255, 0.15); /* Cooler glow */
+  box-shadow:
+    0 25px 70px rgba(100, 170, 255, 0.2),
+    0 0 20px rgba(120, 180, 255, 0.15);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -119,18 +123,20 @@ body, html {
 
 .about-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 35px 90px rgba(150, 200, 255, 0.3); /* Enhance glow on hover */
+  box-shadow:
+    0 35px 90px rgba(100, 170, 255, 0.35),
+    0 0 25px rgba(120, 180, 255, 0.2);
 }
 
 .about-text {
   flex: 1;
-  color: #f9e0ff;
+  color: #f0f6ff; /* bluish white for better readability on blue glass */
 }
 
 .about-text h2 {
   font-size: 2.8rem;
   margin-bottom: 25px;
-  color: #dda0ff;
+  color: #b8d4ff; /* soft blue-purple for headings */
   display: flex;
   align-items: center;
   gap: 10px;
@@ -152,7 +158,7 @@ body, html {
   height: 220px;
   border-radius: 24px;
   overflow: hidden;
-  border: 3px solid rgba(255, 255, 255, 0.25);
+  border: 3px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
 }
 
@@ -162,6 +168,7 @@ body, html {
   object-fit: cover;
   display: block;
 }
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
