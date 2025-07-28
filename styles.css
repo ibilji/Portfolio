@@ -56,12 +56,19 @@ header {
 .about-section {
   position: relative;
   background: url('images/irene-photo.png') no-repeat center center / cover;
-  padding: 120px 30px;
+  padding: 100px 60px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  border-top: 5px solid rgba(255, 255, 255, 0.15); /* Soft white line at top */
+  border: 8px solid rgba(255, 255, 255, 0.15); /* Thicker outer border */
+  border-radius: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  box-shadow: 0 25px 70px rgba(170, 120, 220, 0.18);
+  background-color: rgba(255, 245, 255, 0.85); /* Soft background overlay */
+  z-index: 1;
+  gap: 40px;
 }
 
 .about-section::before,
@@ -90,35 +97,13 @@ header {
   background: radial-gradient(circle, #c183d8, transparent 70%);
 }
 
-.about-card {
-  background: linear-gradient(to bottom right, #f9e6f9, #f3d8f0);
-  box-shadow: 0 25px 70px rgba(170, 120, 220, 0.18);
-  border: 3px solid rgba(230, 200, 255, 0.35); /* Thicker border */
-  color: #5c3a5e;
-  position: relative;
-  padding: 60px;
-  border-radius: 30px;
-  max-width: 1100px;
-  width: 100%;
-  z-index: 1;
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  justify-content: space-between;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.about-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 35px 90px rgba(160, 130, 200, 0.35);
-}
-
 .about-text {
   font-family: 'Cormorant Garamond', serif;
   color: #5a2d67;
   font-size: 1.2rem;
   line-height: 1.8;
   flex: 1;
+  z-index: 1;
 }
 
 .about-text h2 {
@@ -157,7 +142,8 @@ header {
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
-  border: 3px solid rgba(200, 180, 255, 0.4); /* Slightly thicker border */
+  border: 3px solid rgba(200, 180, 255, 0.4);
+  z-index: 1;
 }
 
 .about-image img {
@@ -166,7 +152,6 @@ header {
   object-fit: cover;
   display: block;
 }
-
 
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
