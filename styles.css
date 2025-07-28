@@ -62,128 +62,117 @@ body, html {
 
 /* -------------------- GLOBAL FONTS -------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
-/* -------------------- ABOUT SECTION -------------------- */
+/* About Section - Refined Aesthetic Look */
 .about-section {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-color: #f1e8dc; /* warm beige */
+  background: linear-gradient(145deg, #f5ede3, #efe3d9);
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  border-top: 5px solid rgba(183, 109, 123, 0.15); /* soft clay pink border */
-}
-
-.about-section::before,
-.about-section::after {
-  content: '';
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(100px);
-  z-index: 0;
-  opacity: 0.3;
+  border-top: 6px solid #cba2b2; /* subtle lavender-pink border */
 }
 
 .about-section::before {
-  width: 320px;
-  height: 320px;
-  top: 10%;
-  left: -10%;
-  background: radial-gradient(circle, #f3e6f5, transparent 70%);
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  top: -80px;
+  left: -80px;
+  background: radial-gradient(circle, #f7d6e0, transparent 70%);
+  filter: blur(100px);
+  opacity: 0.4;
+  z-index: 1;
 }
 
 .about-section::after {
-  width: 400px;
-  height: 400px;
-  bottom: -10%;
-  right: -10%;
-  background: radial-gradient(circle, #dab6f3, transparent 70%);
+  content: "";
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  bottom: -80px;
+  right: -80px;
+  background: radial-gradient(circle, #d9c0f1, transparent 70%);
+  filter: blur(100px);
+  opacity: 0.35;
+  z-index: 1;
 }
 
 .about-card {
   position: relative;
   z-index: 2;
   max-width: 960px;
-  width: 90%;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 2px solid rgba(183, 109, 123, 0.25);
-  border-radius: 28px;
-  padding: 60px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(22px);
+  border: 1.5px solid rgba(200, 120, 145, 0.25);
+  border-radius: 30px;
+  padding: 48px;
   display: flex;
   flex-direction: row;
   box-shadow:
-    0 4px 20px rgba(183, 109, 123, 0.2),
-    0 2px 10px rgba(218, 182, 243, 0.15);
+    0 8px 30px rgba(195, 145, 160, 0.15),
+    0 4px 15px rgba(160, 130, 180, 0.1);
   color: #4a3f42;
   font-family: 'Cormorant Garamond', serif;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.about-card:hover {
-  transform: translateY(-5px);
-  box-shadow:
-    0 35px 90px rgba(183, 109, 123, 0.3),
-    0 0 25px rgba(218, 182, 243, 0.2);
-}
-
-.about-image {
-  width: 220px;
-  height: 220px;
-  border-radius: 24px;
-  overflow: hidden;
-  border: 3px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
-  margin-right: 40px;
 }
 
 .about-image img {
-  width: 100%;
-  height: 100%;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
-  display: block;
-}
-
-.about-text {
-  flex: 1;
-  color: #4a3f42;
+  border-radius: 20px;
+  border: 2px solid rgba(183, 109, 123, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  margin-right: 40px;
+  background-color: #f9f1eb;
 }
 
 .about-text h2 {
   font-size: 2.8rem;
-  margin-bottom: 25px;
-  color: #B76D7B; /* soft clay pink */
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  color: #b76d7b;
+  margin-bottom: 20px;
+  font-weight: 600;
+  position: relative;
 }
 
 .about-text h2::after {
-  content: "✨";
-  font-size: 1.8rem;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(to right, #b76d7b, #d7b1ff);
+  border-radius: 2px;
+  opacity: 0.6;
 }
 
 .about-text p {
   font-size: 1.25rem;
   line-height: 1.8;
-  margin-bottom: 20px;
+  color: #4a3f42;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .about-card {
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    padding: 36px;
   }
 
-  .about-image {
+  .about-image img {
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 
-  .about-text h2,
+  .about-text h2 {
+    text-align: center;
+  }
+
   .about-text p {
     text-align: center;
   }
