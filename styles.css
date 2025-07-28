@@ -62,121 +62,104 @@ body, html {
 
 /* -------------------- GLOBAL FONTS -------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
-/* About Section - Refined Aesthetic Look */
+/* About Section - Elegant Purple Glow */
 .about-section {
   position: relative;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(145deg, #f5ede3, #efe3d9);
+  background: linear-gradient(to bottom right, #f3e9e2, #fef8f3);
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  border-top: 6px solid #cba2b2; /* subtle lavender-pink border */
+  border-top: 6px solid rgba(111, 72, 149, 0.25);
 }
 
 .about-section::before {
   content: "";
   position: absolute;
-  width: 420px;
-  height: 420px;
-  top: -80px;
-  left: -80px;
-  background: radial-gradient(circle, #f7d6e0, transparent 70%);
+  width: 400px;
+  height: 400px;
+  top: 0%;
+  left: 0%;
+  background: radial-gradient(circle, #e5d1f2, transparent 70%);
   filter: blur(100px);
-  opacity: 0.4;
+  opacity: 0.5;
   z-index: 1;
 }
 
 .about-section::after {
   content: "";
   position: absolute;
-  width: 480px;
-  height: 480px;
-  bottom: -80px;
-  right: -80px;
-  background: radial-gradient(circle, #d9c0f1, transparent 70%);
+  width: 500px;
+  height: 500px;
+  bottom: 0%;
+  right: 0%;
+  background: radial-gradient(circle, #e9ccf5, transparent 70%);
   filter: blur(100px);
-  opacity: 0.35;
+  opacity: 0.4;
   z-index: 1;
 }
 
 .about-card {
   position: relative;
   z-index: 2;
-  max-width: 960px;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(22px);
-  border: 1.5px solid rgba(200, 120, 145, 0.25);
+  max-width: 980px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(25px);
+  border: 2px solid rgba(111, 72, 149, 0.2);
   border-radius: 30px;
-  padding: 48px;
+  padding: 50px;
   display: flex;
   flex-direction: row;
-  box-shadow:
-    0 8px 30px rgba(195, 145, 160, 0.15),
-    0 4px 15px rgba(160, 130, 180, 0.1);
-  color: #4a3f42;
+  box-shadow: 0 8px 24px rgba(111, 72, 149, 0.25);
+  color: #3d2b3d;
   font-family: 'Cormorant Garamond', serif;
 }
 
 .about-image img {
-  width: 220px;
-  height: 220px;
+  width: 240px;
+  height: 240px;
   object-fit: cover;
-  border-radius: 20px;
-  border: 2px solid rgba(183, 109, 123, 0.2);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
-  margin-right: 40px;
-  background-color: #f9f1eb;
+  border-radius: 24px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  margin-right: 50px;
 }
 
 .about-text h2 {
-  font-size: 2.8rem;
-  color: #b76d7b;
+  font-size: 3rem;
+  color: #6f4895;
   margin-bottom: 20px;
-  font-weight: 600;
-  position: relative;
-}
-
-.about-text h2::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 60px;
-  height: 4px;
-  background: linear-gradient(to right, #b76d7b, #d7b1ff);
-  border-radius: 2px;
-  opacity: 0.6;
+  font-weight: 700;
+  border-bottom: 3px solid #caa6df;
+  display: inline-block;
+  padding-bottom: 4px;
 }
 
 .about-text p {
   font-size: 1.25rem;
-  line-height: 1.8;
-  color: #4a3f42;
+  line-height: 1.9;
+  color: #3d2b3d;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .about-card {
     flex-direction: column;
     align-items: center;
-    padding: 36px;
+    padding: 35px;
   }
 
   .about-image img {
     margin-right: 0;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
   }
 
-  .about-text h2 {
-    text-align: center;
-  }
-
+  .about-text h2,
   .about-text p {
     text-align: center;
   }
 }
+
 
 /* -------------------- PROFILE SECTION -------------------- */
 .profile-section {
