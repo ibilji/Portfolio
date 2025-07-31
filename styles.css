@@ -1,4 +1,4 @@
-/* -------------------- RESET + BASE -------------------- */
+/* -------------------- RESET + BASE -------------------- */ 
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +10,8 @@ html, body {
   width: 100%;
   font-family: 'Cormorant Garamond', serif;
   scroll-behavior: smooth;
-  background-color: #f9e5ff;
-  color: #3d2b3d;
+  background-color: #1a0e24;
+  color: #f9e5ff;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
@@ -49,14 +49,14 @@ header {
 
 .navbar a {
   text-decoration: none;
-  color: #ffd8fc;
+  color: #f9e5ff;
   font-size: 1rem;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-  color: #ffffff;
+  color: #e0c1e9;
 }
 
 /* -------------------- ABOUT SECTION -------------------- */
@@ -64,12 +64,12 @@ header {
   position: relative;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(to bottom right, #f9e5ff, #e0c1e9);
+  background: linear-gradient(to bottom right, #5d3a67, #1a0e24);
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  border-top: 6px solid rgba(111, 72, 149, 0.25);
+  border-top: 6px solid rgba(242, 198, 255, 0.2);
 }
 
 .about-section::before,
@@ -100,9 +100,9 @@ header {
   position: relative;
   z-index: 2;
   max-width: 980px;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(25px);
-  border: 2px solid rgba(111, 72, 149, 0.2);
+  border: 2px solid rgba(233, 180, 255, 0.1);
   border-radius: 30px;
   padding: 50px;
   display: flex;
@@ -121,10 +121,10 @@ header {
 
 .about-text h2 {
   font-size: 3rem;
-  color: #6f4895;
+  color: #e0c1e9;
   margin-bottom: 20px;
   font-weight: 700;
-  border-bottom: 3px solid #caa6df;
+  border-bottom: 3px solid #f9e5ff;
   display: inline-block;
   padding-bottom: 4px;
 }
@@ -132,7 +132,7 @@ header {
 .about-text p {
   font-size: 1.25rem;
   line-height: 1.9;
-  color: #3d2b3d;
+  color: #f9e5ff;
 }
 
 @media (max-width: 768px) {
@@ -155,7 +155,7 @@ header {
 
 /* -------------------- PROFILE SECTION -------------------- */
 .profile-section {
-  background: #e0c1e9;
+  background: #2c163f;
   padding: 120px 20px;
   display: flex;
   justify-content: center;
@@ -163,13 +163,13 @@ header {
 }
 
 .profile-card {
-  background: #ffffff;
+  background: #3b1f50;
   padding: 60px;
   border-radius: 28px;
   max-width: 1200px;
   width: 100%;
-  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
-  color: #2d2d2d;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+  color: #f9e5ff;
 }
 
 .skills-education {
@@ -186,7 +186,7 @@ header {
 
 h3 {
   font-size: 2rem;
-  color: #b76d7b;
+  color: #e0c1e9;
   margin-bottom: 20px;
   font-weight: 700;
 }
@@ -205,13 +205,13 @@ ul li {
 /* -------------------- PROJECTS SECTION -------------------- */
 .projects-section {
   padding: 100px 30px;
-  background: #f9e5ff;
+  background: #2c163f;
   text-align: center;
 }
 
 .section-heading {
   font-size: 3rem;
-  color: #5d3a67;
+  color: #f9e5ff;
   margin-bottom: 50px;
 }
 
@@ -222,12 +222,13 @@ ul li {
 }
 
 .project-card {
-  background: white;
+  background: #3b1f50;
   padding: 30px 25px;
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(130, 160, 200, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: left;
+  color: #f9e5ff;
 }
 
 .project-card:hover {
@@ -237,20 +238,20 @@ ul li {
 
 .project-card h3 {
   font-size: 1.5rem;
-  color: #2d2d2d;
+  color: #f9e5ff;
   margin-bottom: 10px;
 }
 
 .project-card p {
   font-size: 1rem;
-  color: #444;
+  color: #e0c1e9;
   margin-bottom: 15px;
   line-height: 1.6;
 }
 
 .tech-tags span {
-  background-color: #eae6e5;
-  color: #2d2d2d;
+  background-color: #5d3a67;
+  color: #f9e5ff;
   padding: 5px 10px;
   margin: 3px;
   border-radius: 10px;
@@ -270,12 +271,12 @@ ul li {
 }
 
 .btn.view {
-  background-color: #d88c9a;
+  background-color: #b283a9;
   color: #fff;
 }
 
 .btn.code {
-  background-color: #e8a0bf;
+  background-color: #926c9e;
   color: #fff;
 }
 
@@ -286,30 +287,31 @@ ul li {
 /* -------------------- CONTACT SECTION -------------------- */
 .contact-section {
   padding: 100px 20px;
-  background-color: #e0c1e9;
+  background-color: #2c163f;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .contact-card {
-  background-color: #ffffff;
+  background-color: #3b1f50;
   padding: 50px;
   border-radius: 20px;
   max-width: 600px;
   width: 100%;
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
   text-align: center;
+  color: #f9e5ff;
 }
 
 .contact-card h2 {
   font-size: 2.2rem;
-  color: #b76d7b;
+  color: #e0c1e9;
   margin-bottom: 10px;
 }
 
 .contact-card p {
-  color: #2d2d2d;
+  color: #f9e5ff;
   font-size: 1rem;
   margin-bottom: 30px;
 }
@@ -321,9 +323,9 @@ ul li {
   margin-bottom: 15px;
   border-radius: 10px;
   border: none;
-  background-color: #f4eef6;
+  background-color: #5d3a67;
   font-size: 1rem;
-  color: #2d2d2d;
+  color: #f9e5ff;
 }
 
 .contact-form textarea {
@@ -333,7 +335,7 @@ ul li {
 
 .contact-form button {
   padding: 12px 30px;
-  background-color: #d88c9a;
+  background-color: #b283a9;
   color: #fff;
   border: none;
   font-weight: bold;
@@ -343,7 +345,7 @@ ul li {
 }
 
 .contact-form button:hover {
-  background-color: #b76d7b;
+  background-color: #926c9e;
 }
 
 
