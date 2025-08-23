@@ -1,0 +1,408 @@
+/* -------------------- RESET + BASE -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Cormorant Garamond', serif;
+  scroll-behavior: smooth;
+  background-color: #1a0e24; /* Dark background base */
+  color: #f9e5ff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
+
+/* -------------------- GLOBAL GLOWING BACKGROUND -------------------- */
+.glow-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.glow-bg span {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  filter: blur(180px);
+  opacity: 0.65;
+  animation: float 14s infinite ease-in-out alternate;
+}
+
+.glow-bg .pink {
+  background: #ff4dc4;
+  top: -100px;
+  left: -120px;
+}
+
+.glow-bg .purple {
+  background: #a64dff;
+  top: 200px;
+  right: -150px;
+}
+
+.glow-bg .blue {
+  background: #4ddaff;
+  bottom: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.glow-bg .orange {
+  background: #ff9966;
+  bottom: 100px;
+  right: 10%;
+}
+
+@keyframes float {
+  0% { transform: translateY(0) scale(1); }
+  100% { transform: translateY(-60px) scale(1.1); }
+}
+
+/* Ensure all sections allow glow behind */
+section, header {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* -------------------- HEADER -------------------- */
+header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url('images/irenefront.png') no-repeat center center/cover;
+  z-index: -1;
+}
+
+.navbar {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  z-index: 2;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #f9e5ff; /* fixed: visible on dark bg */
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #e0c1e9;
+}
+
+/* -------------------- GLOBAL SECTIONS AFTER HERO -------------------- */
+section {
+  padding: 100px 20px;
+  color: #f9e5ff; /* ensure readable text */
+}
+
+.card,
+.about-card,
+.profile-card,
+.project-card,
+.contact-card {
+  background: rgba(255, 255, 255, 0.1); /* frosted glass look */
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  padding: 40px;
+  color: #f9e5ff; /* light text */
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: all 0.35s ease;
+}
+
+/* Default hover glow (for all cards except hero) */
+.card:hover,
+.about-card:hover,
+.profile-card:hover,
+.project-card:hover,
+.contact-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.4), 
+              0 0 25px rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(16px) saturate(200%);
+  -webkit-backdrop-filter: blur(16px) saturate(200%);
+}
+
+/* 🚫 Disable glow hover inside HERO */
+header .card:hover,
+header .about-card:hover,
+header .profile-card:hover,
+header .project-card:hover,
+header .contact-card:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  backdrop-filter: blur(12px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(12px) saturate(180%) !important;
+}
+
+/* -------------------- ABOUT SECTION -------------------- */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-card {
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-image img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.about-text h2 {
+  font-size: 3rem;
+  color: #f9e5ff; /* fixed */
+  margin-bottom: 20px;
+  font-weight: 700;
+  border-bottom: 3px solid #f5a6b8;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.about-text p {
+  font-size: 1.25rem;
+  line-height: 1.9;
+  color: #e8d9f0; /* lighter for readability */
+}
+
+@media (max-width: 768px) {
+  .about-card {
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+  }
+
+  .about-text h2,
+  .about-text p {
+    text-align: center;
+  }
+}
+
+/* -------------------- PROFILE SECTION -------------------- */
+.profile-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.skills-education {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.skills, .education {
+  flex: 1;
+  min-width: 300px;
+}
+
+h3 {
+  font-size: 2rem;
+  color: #f9e5ff; /* fixed */
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e8d9f0;
+}
+
+/* -------------------- PROJECTS SECTION -------------------- */
+.projects-section {
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 3rem;
+  color: #f9e5ff; /* fixed */
+  margin-bottom: 50px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #f9e5ff; /* fixed */
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #e8d9f0; /* fixed */
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.tech-tags span {
+  background-color: #f5a6b8;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 3px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+}
+
+/* -------------------- GLASSMORPHIC BUTTONS -------------------- */
+.project-buttons .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  cursor: pointer;
+}
+
+.project-buttons .btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35),
+              0 0 18px rgba(255,255,255,0.4);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Glow accents */
+.btn.view {
+  color: #00ffd9;
+  text-shadow: 0 0 8px rgba(0,255,217,0.6);
+}
+
+.btn.code {
+  color: #ff7bff;
+  text-shadow: 0 0 8px rgba(255,123,255,0.6);
+}
+
+/* -------------------- CONTACT SECTION -------------------- */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-card h2 {
+  font-size: 2.2rem;
+  color: #f9e5ff; /* fixed */
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  color: #e8d9f0; /* fixed */
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(255,255,255,0.15);
+  font-size: 1rem;
+  color: #f9e5ff;
+  backdrop-filter: blur(6px);
+}
+
+.contact-form textarea {
+  height: 130px;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 12px 30px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.contact-form button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+/* -------------------- HEADINGS IN ITALICS -------------------- */
+h1, h2, h3, h4, h5, h6, .section-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+}
